@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfólio</title>
+  </head>
+  <body id="inicio">
+    <header class="cabecalho">
+      <nav class="cabecalho--menu">
+        <!-- Container para o texto do menu -->
+        <div class="menu--inicio">
+          <ul class="menu--lista">
+            <li class="menu--link"><a href="#inicio">Início</a></li>
+            <li class="menu--link"><a href="#sobre">Sobre mim</a></li>
+            <li class="menu--link"><a href="#projetos">Projetos</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Hamburger -->
+        <input type="checkbox" id="menu--caixa" class="menu--caixa" />
+        <label for="menu--caixa" class="hamburguer--icone">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Menu lista Hamburger -->
+        <ul class="menu--lista--Hamburger">
+          <li class="Hamburger--link"><a href="#inicio">Início</a></li>
+          <li class="Hamburger--link"><a href="#sobre">Sobre mim</a></li>
+          <li class="Hamburger--link"><a href="#projetos">Projetos</a></li>
+
+          <!-- Interruptor dentro do menu hamburguer -->
+          <li class="Hamburger--interruptor">
+            <span class="interruptor--texto">Tema Claro</span>
+            <div class="interruptor--botao">
+              <input
+                type="checkbox"
+                id="interruptor--caixa-menu"
+                class="interruptor--caixa"
+              />
+              <label
+                for="interruptor--caixa-menu"
+                class="interruptor--icone"
+              ></label>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Interruptor para telas grandes -->
+        <div class="interruptor">
+          <span class="interruptor--texto">Tema Claro</span>
+          <div class="interruptor--botao">
+            <input
+              type="checkbox"
+              id="interruptor--caixa-desktop"
+              class="interruptor--caixa"
+            />
+            <label
+              for="interruptor--caixa-desktop"
+              class="interruptor--icone"
+            ></label>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="corpo">
+      <!-- Inicio -->
+      <section class="conteudo">
+        <div class="inicio--conteudo">
+          <!-- Titulo -->
+          <h1 class="titulo">
+            Eleve seu negócio digital a outro nível
+            <strong class="titulo--destaque"
+              >com um Front-end de qualidade!</strong
+            >
+          </h1>
+
+          <!-- Texto de introdução -->
+          <p class="paragrafo">
+            Olá! Sou Fabricio de Oliveira, desenvolvedor Front-end com
+            especialidade em React, HTML e CSS. Ajudo pequenos negócios e
+            designers a colocarem em prática boas ideias.
+          </p>
+
+          <!-- Botão de convite -->
+          <div class="inicio--botao botao--geral bordas-sombreadas">
+            <a
+              class="botao--geral-link"
+              href="mailto:fabricio.bimbi@outlook.com.br"
+              target="_blank"
+            >
+              <!-- Ícone do e-mail -->
+              <img
+                src="./img/e-mail--tema-escuro.png"
+                alt="Ícone do E-mail, do Office"
+                class="email--icon"
+              />
+
+              <!-- Texto do botão -->
+              <span>VAMOS CONVERSAR!</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagem de Perfil Tema Escuro -->
+        <div class="inicio--foto__container foto--tema-escuro">
+          <img
+            class="inicio--foto bordas-sombreadas"
+            src="./img/Foto-Perfil-Verde-Studio-Ghibli.png"
+            alt="Foto de perfil de Fabricio de Oliveira"
+          />
+          <div class="inicio--foto--titulo bordas-sombreadas">
+            <span>Fabricio de Oliveira</span>
+            <br />
+            <span>Desenvolvedor Front-end</span>
+          </div>
+        </div>
+
+        <!-- Imagem de Perfil Tema Claro -->
+        <div class="inicio--foto__container foto--tema-claro">
+          <img
+            class="inicio--foto bordas-sombreadas"
+            src="./img/Foto-Perfil-Azul-Studio-Ghibli.png"
+            alt="Foto de perfil de Fabricio de Oliveira"
+          />
+          <div class="inicio--foto--titulo bordas-sombreadas">
+            <span>Fabricio de Oliveira</span>
+            <br />
+            <span>Desenvolvedor Full Stack</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Mim -->
+      <section id="sobre" class="sobre conteudo centraliza">
+        <!-- Bloco Apresentação -->
+        <div class="sobre--mim bordas-sombreadas">
+          <div>
+            <h1 class="titulo">Sobre Mim</h1>
+            <p class="paragrafo">
+              Sou formado em Análise e Desenvolvimento de Sistemas e atualmente
+              estou cursando o 4º ano de Engenharia de Software. Minha
+              especialidade é em Front-end, com foco em React, HTML e CSS. Tenho
+              experiência em desenvolver interfaces limpas e responsivas, sempre
+              buscando criar soluções que sejam intuitivas e agradáveis para
+              todos os tipos de usuários, independentemente do nível de
+              experiência.
+            </p>
+
+            <p class="paragrafo">
+              Em vez de desenvolver sites genéricos e sobrecarregados de
+              informações, meu objetivo é criar experiências digitais que sejam
+              simples de navegar e visualmente agradáveis. Procuro entender o
+              propósito de cada projeto para entregar algo funcional, direto e
+              eficiente, garantindo que o usuário encontre o que precisa de
+              forma rápida e sem frustrações.
+            </p>
+          </div>
+
+          <!-- Botão de convite -->
+          <div class="sobre--botao botao--geral bordas-sombreadas">
+            <a
+              class="botao--geral-link"
+              href="mailto:fabricio.bimbi@outlook.com.br"
+              target="_blank"
+            >
+              <!-- Ícone do e-mail -->
+              <img
+                src="./img/e-mail--tema-escuro.png"
+                alt="Ícone do E-mail, do Office"
+                class="email--icon"
+              />
+
+              <!-- Texto do botão -->
+              <span>FALE COMIGO!</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bloco Redes Sociais -->
+        <div class="sobre--lista bordas-sombreadas">
+          <h1 class="titulo">Conecte-se comigo:</h1>
+          <p class="paragrafo">Acompanhe meus trabalhos:</p>
+
+          <ul class="redes-lista">
+            <li>
+              <a
+                class="redes-link"
+                href="https://www.instagram.com/fabra.oliveira/"
+                target="_blank"
+              >
+                <img src="./img/instagram.png" alt="logo do Instagram" />
+                <span class="redes--texto">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="redes-link"
+                href="https://www.linkedin.com/in/fabricio-de-oliveira-bimbi-516719223/"
+                target="_blank"
+              >
+                <img src="./img/linkedin.png" alt="logo do LinkedIn" />
+                <span class="redes--texto">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="redes-link"
+                href="https://www.youtube.com/@fabraoliveira2540"
+                target="_blank"
+              >
+                <img src="./img/youtube.png" alt="logo do YouTube" />
+                <span class="redes--texto">YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="redes-link"
+                href="https://github.com/FabraOliveira"
+                target="_blank"
+              >
+                <img src="./img/github.png" alt="logo do GitHub" />
+                <span class="redes--texto">GitHub</span>
+              </a>
+            </li>
+            <li class="tk--icone-claro">
+              <a
+                class="redes-link"
+                href="https://www.tiktok.com/@fabra.oliveira?_t=ZM-8uHXRP0Fs29&_r=1"
+                target="_blank"
+              >
+                <img src="./img/tik-tok.png" alt="logo do TikTok" />
+                <span class="redes--texto">TikTok</span>
+              </a>
+            </li>
+            <li class="tk--icone-escuro">
+              <a
+                class="redes-link"
+                href="https://www.tiktok.com/@fabra.oliveira?_t=ZM-8uHXRP0Fs29&_r=1"
+                target="_blank"
+              >
+                <img src="./img/tik-tok--escuro.png" alt="logo do TikTok" />
+                <span class="redes--texto">TikTok</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projetos -->
+      <section id="projetos" class="projetos--corpo">
+        <div class="projetos--intro">
+          <h1 class="titulo">Conheça Meus Projetos</h1>
+          <p class="paragrafo">Confira meus três últimos trabalhos!</p>
+
+          <!-- Botão de convite -->
+          <div class="projetos--botao botao--geral bordas-sombreadas">
+            <a
+              class="botao--geral-link"
+              href="mailto:fabricio.bimbi@outlook.com.br"
+              target="_blank"
+            >
+              <!-- Ícone do e-mail -->
+              <img
+                src="./img/e-mail--tema-escuro.png"
+                alt="Ícone do E-mail, do Office"
+                class="email--icon"
+              />
+
+              <!-- Texto do botão -->
+              <span>QUER SABER MAIS?</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="projetos--caixas">
+          <!-- Lista de Projetos -->
+          <ul class="projetos--listas">
+            <!-- Excel Tema Escuro -->
+            <li class="projetos">
+              <img
+                class="projetos--img-escuro"
+                src="./img/Excel.png"
+                alt="Ícone representando um arquivo de planilha do Excel com a extensão XLS"
+              />
+              <!-- Excel Tema claro -->
+              <img
+                class="projetos--img-claro"
+                src="./img/Excel--tema-claro.png"
+                alt="Ícone representando um arquivo de planilha do Excel com a extensão XLS"
+              />
+              <p class="paragrafo">
+                Planilha financeira automatizada, ideal para organizar despesas
+              </p>
+              <p class="cta">
+                <strong
+                  ><a
+                    href="https://github.com/FabraOliveira/planilha-financeira?tab=readme-ov-file"
+                    target="_blank"
+                    >Transforme sua gestão financeira hoje mesmo! Clique e
+                    descubra como!</a
+                  ></strong
+                >
+              </p>
+            </li>
+            <!-- Unicesumar Tema Escuro -->
+            <li class="projetos">
+              <img
+                class="projetos--img-escuro"
+                src="./img/Unicesumar.png"
+                alt="Ícone da instituição de ensino Unicesumar."
+              />
+              <!-- Unicesumar Tema Escuro -->
+              <img
+                class="projetos--img-claro"
+                src="./img/Unicesumar--Tema-Claro.png"
+                alt="Ícone da instituição de ensino Unicesumar."
+              />
+              <p class="paragrafo">
+                Landing Pages, projetadas para oferecer uma experiência fluida,
+                intuitiva e acessível para todos os usuários.
+              </p>
+              <p class="cta">
+                <strong
+                  ><a
+                    href="https://fabraoliveira.github.io/guia-studeo/"
+                    target="_blank"
+                    >Confira meu último projeto desenvolvido para a
+                    Unicesumar!</a
+                  ></strong
+                >
+              </p>
+            </li>
+            <!-- Alura Tema Escuro -->
+            <li class="projetos">
+              <img
+                class="projetos--img-escuro"
+                src="./img/Alura.png"
+                alt="Icone da Alura."
+              />
+              <!-- Alura Tema Escuro -->
+              <img
+                class="projetos--img-claro"
+                src="./img/Alura--tema-claro.png"
+                alt="Icone da Alura."
+              />
+              <p class="paragrafo paragrafo--alura">
+                Marketplace, projetada para oferecer uma experiência fácil e
+                intuitiva para realizar a assinatura.
+              </p>
+              <p class="cta">
+                <strong
+                  ><a
+                    href="https://fabraoliveira.github.io/Alura-HTML-CSS/#inicio"
+                    target="_blank"
+                    >Veja como desenvolvi este projeto incrível para a Alura!</a
+                  ></strong
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="rodape-conteudo">
+        <!-- Informações do Desenvolvedor -->
+        <div class="rodape-secao">
+          <h2>Desenvolvido por:</h2>
+          <p>© Fabricio de Oliveira Bimbi 2025</p>
+        </div>
+
+        <!-- Tecnologias e Contato -->
+        <div class="rodape-secao">
+          <h2>Tecnologias Utilizadas</h2>
+          <p>HTML5, CSS3, Flexbox e Grid</p>
+        </div>
+
+        <!-- Formação Acadêmica -->
+        <div class="rodape-secao">
+          <h2>Contato</h2>
+          <p>
+            E-mail:
+            <a href="mailto:fabricio.bimbi@outlook.com.br"
+              >fabricio.bimbi@outlook.com.br</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
